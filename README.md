@@ -2,6 +2,16 @@
 
 Projeto desenvolvido utilizando ADVPL e TLPP como principais linguagens.
 
+# Instalação 
+
+# Configuração
+
+# Uso
+
+# Execução
+
+# Documentação
+
 ---
 
     Desenvolvido e documentado por: Cristian Gustavo
