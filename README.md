@@ -2,15 +2,20 @@
 
 Projeto desenvolvido utilizando ADVPL e TLPP como principais linguagens.
 
-# Instalação 
+## Instalação
 
-# Configuração
+ - Protheus
+    - SQL2019
+    - SSMS
+    - Criação usuário BD, Usuário, Conexão Protheus
 
-# Uso
+## Configuração
 
-# Execução
+## Uso
 
-# Documentação
+## Execução
+
+## Documentação
 
 ---
 
