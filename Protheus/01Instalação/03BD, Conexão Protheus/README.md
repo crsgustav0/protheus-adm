@@ -7,7 +7,7 @@ Com o SSMS aberto, clique sobre a aba **"Banco de dados"** e em seguida sobre a 
 
 <img src="./img/00userp12/p12_firstcreationclick.png"/>
 
-O nome do banco foi selecionado como **"P122310"**, em seguida confirme sobre a ordenação do banco de dados na opção **"Opções"**:
+O nome do banco foi selecionado como **"P1212210"**, em seguida confirme sobre a ordenação do banco de dados na opção **"Opções"**:
 <img src="./img/00userp12/p12_databaseoptions.png"/>
 
 **OBS: Ao abrir a aba, é possível visualisar a ordenação preenchida como "Padrão", sendo referente ao valor informado em sua instalação. Caso seja necessário reinformar o valor, basta selecionar a opção "Latin_1_General" e confirmar sobre a opção "OK"**
@@ -33,7 +33,7 @@ Feito isso, clique sobre a aba **"Funções do servidor"** e em seguida verifique 
 
 <img src="./img/00userp12/p12_userfunctions.png" />
 
-Feito isso, selecione qual banco o usuário terá acesso, como no caso o banco **"P122310"** e selecione a opção **"db_owner"** para que o usuário tenha acesso como proprietário do banco de dados, feito isso aperte sobre a opção **"OK"**, confirmando a operação.
+Feito isso, selecione qual banco o usuário terá acesso, como no caso o banco **"P1212210"** e selecione a opção **"db_owner"** para que o usuário tenha acesso como proprietário do banco de dados, feito isso aperte sobre a opção **"OK"**, confirmando a operação.
 
 <img src="./img/00userp12/p12_useraccessdb.png" />
 <img src="./img/00userp12/p12_useraccesscreated.png" />
@@ -57,10 +57,18 @@ Feito isso selecione a opção **"SQL Server Native Cliente 11.0"** e confirme em 
 Com a abertura da nova tela, informe o nome do banco de dados a ser conectado e qual SQL Server será conectado, sendo:
 
 - Credenciais de acesso:
-  - **Nome:** "P122310"
-  - **SQL Server:** "P122310", poderia ser informado como **"."** por se tratar de um localhost
+  - **Nome:** "P1212210"
+  - **SQL Server:** "P1212210", poderia ser informado como **"."** por se tratar de um localhost
 
 <img src="./img/01odbc/odbc_dbconnect.png" />
+
+**Obs: Em caso de problemas relacionados a conexão pode ser usado o "localhost no campo "SQL Server""**
+
+<img src="./img/01odbc/odbc_dblocalhost.png" />
+
+Desta forma tendo acesso a lista de banco de dados, criados anteriormente no SQL Server.
+
+<img src="./img/01odbc/odbc_dblocalhostlist.png" />
 
 - Credenciais de logon:
   - **ID Logon:** "adminP12"
@@ -68,7 +76,7 @@ Com a abertura da nova tela, informe o nome do banco de dados a ser conectado e 
 
 <img src="./img/01odbc/odbc_dbaccesslogon.png" />
 
-Feito isso informe o banco de dados padrão para a conexão, sendo **"P122310"** e confirme em seguida.
+Feito isso informe o banco de dados padrão para a conexão, sendo **"P1212210"** e confirme em seguida.
 
 <img src="./img/01odbc/odbc_dbconnect1.png" />
 <img src="./img/01odbc/odbc_dbconnectok.png" />
