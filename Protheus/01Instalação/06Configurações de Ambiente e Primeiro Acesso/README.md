@@ -1,11 +1,11 @@
 # Protheus-adm
 
-## Configuração DBACCESS
+## Configuração ambiente Protheus e Configuração Primeiro Acesso
 
-A instalação, configuração do DBAccess é possível ser feita via instalador via download ou diretamente pela pasta instalada com o Protheus.
 
-<img src="./img/config/protheus_dbaccess_location.png" />
-<img src="./img/config/protheus_dbaccess_location2.png" />
+Para fazer a configuração do ambiente e posteriormente o primeiro acesso, é necessário abrir o diretório de instalação do Protheus, sendo: **"C:\TOTVS\Protheus\P122210\Protheus\bin\appserver"** e abrir o arquivo **"appserver.ini"**
+
+<img src="./img/config/protheus_configure.png" />
 
 ---
 
@@ -110,3 +110,6 @@ O arquivo pode ser baixado pelo site [TOTVS instalador Windows](https://drive.go
 
     Desenvolvido e documentado por: Cristian Gustavo
     Data início: 12/04/2024
+
+
+Configurações de Ambiente e Primeiro Acesso
