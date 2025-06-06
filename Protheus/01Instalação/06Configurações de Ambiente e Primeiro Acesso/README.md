@@ -41,21 +41,53 @@ Para fazer a configuração do primeiro acesso, é necessário abrir o diretório de 
 
 <img src="./img/1access/protheus_configure_appserver_smart.png" />
 
-# Referência
+# Atualização binários
 
-- **Download TOTVS License Windows**
+Para realizar a atualização dos binários, é necessário parar os serviço do LicenseServer e o DBAccess, acessar o diretórios diretórios, sendo:
 
-O arquivo pode ser baixado pelo site [TOTVS License](https://drive.google.com/file/d/1nR_ueegSh1lzCeiVSmcjQxxO96ePn7X5/view?usp=drive_link)
+**"Obs: Para realizar a atualização dos arquivos é recomendado manter uma cópia dos arquivos.ini"**
 
-- **Download TOTVS instalador Windows**
+- AppServer
 
-O arquivo pode ser baixado pelo site [TOTVS instalador Windows](https://drive.google.com/file/d/1DATPRFPiTrb0u5rHqUh5UgSIQWaXDxV9/view?usp=drive_link)
+  Diretório AppServer Download: **"C:\Users\CR$\Downloads\Protheus\updates Windows 1212310\updates Windows 1212310\23-10-09-P12_APPSERVER_BUILD-20.3.2.1_WINDOWS_X64**"
 
-- **Download pacote com atualizações**
-  O arquivo pode ser baixado pelo site [pacote com atualizações](https://drive.google.com/file/d/160os2AURcOAodaER7n3dQTUEgjDHPWK9/view?usp=drive_link)
+  Diretório AppServer Máquina Local: **"C:\TOTVS\Protheus\P122210\Protheus\bin\appserver**"
 
-- **Download pacote com atualizações**
-  Documentação configuração [Como Instalar e Configurar o Protheus 12.1.23 – Lobo Guará – Parte 2](https://protheusadvpl.com.br/como-instalar-e-configurar-o-protheus-12-1-23-lobo-guara-parte-2/)
+  <img src="./img/3binary/protheus_appserver_directory.png" />
+
+  <img src="./img/3binary/protheus_appserver_directory_update.png" />
+
+- DBAccess
+
+  Diretório DBAccess Download: **"C:\Users\CR$\Downloads\Protheus\updates Windows 1212310\updates Windows 1212310\23-10-09-P12_APPSERVER_BUILD-20.3.2.1_WINDOWS_X64**"
+
+  Diretório DBAccess Máquina Local: **"C:\TOTVS\Protheus\P122210\TOTVSDBAccess\windows**"
+
+  <img src="./img/3binary/protheus_dbaccess_directory.png" />
+
+  <img src="./img/3binary/protheus_dbaccess_directory_update.png" />
+
+**"Obs: É necessário realizar a cópia de um arquivo localizada no diretório, que deve ser copiada para o diretório do AppServer"**
+
+---
+
+Diretório DLL: **"C:\TOTVS\Protheus\P122210\TOTVSDBAccess\windows**"
+
+  <img src="./img/3binary/protheus_appserver_directory_dll.png" />
+
+Diretório AppServer: **"C:\TOTVS\Protheus\P122210\TOTVSDBAccess\windows**"
+
+  <img src="./img/3binary/protheus_appserver_directory_dll-copy.png" />
+
+---
+
+- Includes
+
+  Diretório Includes Download: **"C:\Users\CR$\Downloads\Protheus\updates Windows 1212310\updates Windows 1212310\23-09-18-P12_INCLUDES**"
+
+  Diretório Includes Máquina Local: **"C:\TOTVS\Includes**"
+
+  <img src="./img/3binary/protheus_includes_directory.png" />
 
 ---
 
