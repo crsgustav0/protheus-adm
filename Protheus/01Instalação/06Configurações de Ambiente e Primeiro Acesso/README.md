@@ -2,93 +2,44 @@
 
 ## Configuração ambiente Protheus e Configuração Primeiro Acesso
 
-
 Para fazer a configuração do ambiente e posteriormente o primeiro acesso, é necessário abrir o diretório de instalação do Protheus, sendo: **"C:\TOTVS\Protheus\P122210\Protheus\bin\appserver"** e abrir o arquivo **"appserver.ini"**
 
-<img src="./img/config/protheus_configure.png" />
+<img src="./img/0config/protheus_configure.png" />
 
 ---
 
-Caso tente conectar diretamente o DBAccess vai retornar uma mensagem de erro.
+Com a abertura do arquivo serão, a primeira alteração será a mudança da tag referente ao nome do ambiente de **'enviroment'** para **'protheus'**.
 
-<img src="./img/config/protheus_dbaccess_fisrt_open.png" />
+<img src="./img/0config/protheus_configure_enviroment.png" />
 
-<img src="./img/config/protheus_dbaccess_home.png" />
+Feito isso, será criada uma nova seção chamada **'dbaccess'**, adicionando as chaves:
 
-<img src="./img/config/protheus_dbaccess_error.png" />
+- **database:**,
+  Referente ao banco de dados do sistema, podendo ser informado como **"postgree"** ou **"sql"**.
+- **server:**
+  Referente ao servidor do DBAccess, por se tratar de um ambiente local de desenvolvimento, pode ser informado como **"localhost"**.
+  **Obs: No caso o Protheus não realiza a comunicação direta com o banco de dados, é feita a comunicação entre o P12 e o DBAccess que por sua vez faz a comunicação com o banco de dados.**
+- **port:**
+  Referente a porta do DBAccess, não a porta do banco de dados, pode ser informado como **"7890"**.
+- **alias:**
+  Referente a alias ODBC criado, pode ser informado como **"protheus"**.
 
-Como o serviço está sendo executado em base local, é necessário executar, criar o serviço de conexão. Necessário criar um atalho no mesmo diretório, ir em Propriedades do atalho.
+Feito isso será criada uma nova seção no final do arquivo chamada **'general'**, adicionando as chaves:
 
-<img src="./img/config/protheus_dbaccess_shortcut.png" />
+- **maxStringSize:**,
+  Referente ao limite máximo de uma string, podendo ser informado como **"500"**.
 
-<img src="./img/config/protheus_dbaccess_shortcut_properties.png" />
+Desta forma com as primeiras alterações o appserver.ini se encontra desta forma. Após as alterações, basta salvar o arquivo e reiniciar o serviço.
 
-Ao prosseguir com a instalação, será exibida a seguinte tela com as informações referentes aos nomes e portas dos serviços Protheus.
+  <img src="./img/0config/protheus_configure_dbaccess.png" />
 
----
+  <img src="./img/0config/protheus_configure_appserver_restart.png" />
 
-<img src="./img/config/protheus_dbaccess_shortcut_properties2.png" />
+# Configuração primeiro acesso
 
-- Portas Serviços:
-  - **Destino:**
-    Adicionado somente um **" -console"**
-    Desta forma:
-    **"C:\TOTVS\Protheus\P122210\TOTVSDBAccess\windows\dbaccess64.exe -console"**
+Para fazer a configuração do primeiro acesso, é necessário abrir o diretório de instalação do Protheus, sendo: **"C:\TOTVS\Protheus\P122210\Protheus\bin\smartclient"** e abrir o arquivo **"appserver.ini"**
 
-Após executar o atalho criado, o serviço estará ativo, sendo possível realizar a conexão do DBAcess.
-
-<img src="./img/config/protheus_dbaccess_console.png" />
-<img src="./img/config/protheus_dbaccess_home.png" />
-<img src="./img/config/protheus_dbaccess_home_connect.png" />
-
-# dev
-
-# Configuração acesso DBAcess
-
-Para fazer a criação da conexão com o banco de dados, clique sobre a aba **"Configurações"**.
-
-<img src="./img/exec/protheus_dbaccess_settings.png" />
-
-Em sequida sobre a opção **"Microsoft SQL"**.
-
-<img src="./img/exec/protheus_dbaccess_settings_sql.png" />
-
-- Portas Serviços:
-  - **Porta de serviço do AppServer:**
-    Mantido o valor padrão como **"1234"**
-  - **Nome do Serviço do AppServer:**
-    Alterado para **"totvsappserver122210"**
-  - **Descrição do Serviço do AppServer:**
-    Alterado para **".03.TotvsAppServer | 1212210"**, desta forma ficará abaixo do TotvsLicense no Serviçõs do Windows.
-    Nome de exibição do serviço TOTVS License, **não pode ser igual a porta do AppServer.**
-    Mantido o valor padrão como **"4321"**
-
-Após alterações o preenchimento final se encontra dessa forma, clique sobre a opção **"Avançar"**, opção **"Novo"**.
-
-<img src="./img/exec/protheus_dbaccess_settings_new.png" />
-<img src="./img/exec/protheus_dbaccess_settings_name.png" />
-
-Nesse momento será usado o logon criado via SQLServer.
-
-- Configurações do License Server:
-  - **Nome:**
-    Informado como **"adminP12"**, por se tratar de uma instalação local.
-  - **Senha:**
-    Alterado para **"@01"**
-
-Sendo preenchido desta forma, basta apertar sobre o botão de **"Salvar"**.
-
-<img src="./img/exec/protheus_dbaccess_settings_admin.png" />
-
-<img src="./img/exec/protheus_dbaccess_settings_save.png" />
-
-É possível testar a conexão clicando na aba de **"Assistentes"**, **"Validação de Conexão"**, **"Avançar"**, Selecione a opção **"Microsoft SQL"**, novamente **"Avançar"** e informar o nome do banco de dados, sendo: **"P1212210"**.
-
-<img src="./img/exec/assist/protheus_dbaccess_assist_settings.png" />
-<img src="./img/exec/assist/protheus_dbaccess_assist_settings_first_open.png" />
-<img src="./img/exec/assist/protheus_dbaccess_assist_settings_sql.png" />
-<img src="./img/exec/assist/protheus_dbaccess_assist_settings_sql2.png" />
-<img src="./img/exec/assist/protheus_dbaccess_assist_settings_ok.png" />
+<img src="./img/1access/protheus_configure_appserver_smart.png" />
 
 # Referência
 
@@ -110,6 +61,5 @@ O arquivo pode ser baixado pelo site [TOTVS instalador Windows](https://drive.go
 
     Desenvolvido e documentado por: Cristian Gustavo
     Data início: 12/04/2024
-
 
 Configurações de Ambiente e Primeiro Acesso
