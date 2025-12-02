@@ -62,7 +62,7 @@ Com a abertura da nova tela, informe o nome do banco de dados a ser conectado e 
 
 <img src="./img/01odbc/odbc_dbconnect.png" />
 
-**Obs: Em caso de problemas relacionados a conexão pode ser usado o "localhost no campo "SQL Server""**
+**Obs: Em caso de problemas relacionados a conexão pode ser usado o "localhost no campo "SQL Server"**
 
 <img src="./img/01odbc/odbc_dblocalhost.png" />
 
